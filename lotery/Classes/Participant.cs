@@ -6,7 +6,15 @@ public class Participant
     public string LastName { get; set; }
     public DateTime DateOfBirth { get; set; }
     public int Id { get; set; }
-    
+
+    public Participant(string firstName, string lastName, DateTime dateOfBirth, int id)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        DateOfBirth = dateOfBirth;
+        Id = id;
+        
+    }
     public string GetFullName() => $"{FirstName} {LastName}";
     
     public bool IsAdult()
